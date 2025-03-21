@@ -1,0 +1,23 @@
+a{
+    text-decoration:none;
+}
+a:visited {
+    color: black;
+  }
+li{
+    list-style: none;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: #e9e7e7;
+    width: 100%;
+    box-sizing: border-box;
+    height: 6vh;
+    padding: 0 2rem  0 2rem;
+}
