@@ -6,6 +6,8 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
+
 input{
     padding: 10px;
     padding-right: 40px;
@@ -30,9 +32,24 @@ li{
     list-style-type: none;
 }
 
-.mainDiv{
-    padding: 1rem 0;
+.navbar{
+    transition: transform 1s ease;
 }
+/* .navbar.fixed-top {
+    position: fixed;
+    top: -100px; /* 初始位置為負值，隱藏在畫面上方 */
+    width: 100%;
+  } */
+
+  .navbar.show {
+    transform: translateY(100px); /* 預設狀態為下移 */
+    opacity: 0; /* 隱藏 */
+  }
+
+  .navbar.show.fixed-top {
+    transform: translateY(0); /* 滾動後顯示 */
+    opacity: 1;
+  }
 
 
 .personImg{
@@ -43,6 +60,11 @@ li{
     overflow: hidden;
     margin: 1rem 0;
 }
+
+.mainDiv{
+    padding: 1rem 0;
+}
+
 
 
 .errorAlter{
