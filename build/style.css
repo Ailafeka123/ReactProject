@@ -35,11 +35,11 @@ li{
 .navbar{
     transition: transform 1s ease;
 }
-/* .navbar.fixed-top {
+.navbar.fixed-top {
     position: fixed;
     top: -100px; /* 初始位置為負值，隱藏在畫面上方 */
     width: 100%;
-  } */
+  }
 
   .navbar.show {
     transform: translateY(100px); /* 預設狀態為下移 */
@@ -64,9 +64,6 @@ li{
 .mainDiv{
     padding: 1rem 0;
 }
-
-
-
 .errorAlter{
     color: crimson;
 }
